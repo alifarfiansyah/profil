@@ -4,12 +4,25 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Portfolio Dio Alif</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <!-- Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   </head>
-  <body>
+  
+  
+  <body style="font-family: 'Lato', sans-serif;">
+      
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color : var(--bs-body-bg);">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: var(--bs-body-bg);">
       <div class="container">
         <a class="navbar-brand" href="#">Dio Alif Arfiansyah</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,13 +31,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
+              <a class="nav-link" href="#pengalaman">Pengalaman</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
+              <a class="nav-link" href="#project">Project</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -34,16 +47,16 @@
     <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
   </button>
   <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item d-flex align-item-center" type="button" data-bs-value="light">
-    <i class="bi bi-sun-fill me-2 oppacity-50" data-theme-icon="bi-sun-fill"></i>
+    <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light">
+    <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>
     Light
   </button></li>
-    <li><button class="dropdown-item d-flex align-item-center" type="button" data-bs-value="dark">
-    <i class="bi bi-moon-fill me-2 oppacity-50" data-theme-icon="bi-moon-fill"></i>
+    <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark">
+    <i class="bi bi-moon-stars-fill me-2 opacity-50" data-theme-icon="bi-moon-stars-fill"></i>
     Dark
   </button></li>
-    <li><button class="dropdown-item d-flex align-item-center" type="button" data-bs-value="auto">
-    <i class="bi bi-circle-half me-2 oppacity-50" data-theme-icon="bi-circle-half"></i>
+    <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto">
+    <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
     Auto
   </button></li>
   </ul>
@@ -53,15 +66,218 @@
       </div>
     </nav>
     <!-- Akhir Navbar -->
+    
+    <!-- Heading -->
+    <section class="head" style="margin-top:100px" id="head">
+        <div class="container align-items-center text-center">
+                  <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/profil.png" alt="Dio Alif" width="200"/>
+            <h1 class="display-4">DIO ALIF ARFIANSYAH</h1>
+            <p class="lead">Administrator | Data Analis | Web Developer</p>
+        </div>
+    </section>
+    <!-- Akhir Heading -->
+    
+    <!-- Divider -->
+    <hr class="sidebar-divider" style="border-top: 8px solid; margin:60px 0 30px 0"/>
+    
+    <!-- Pengalaman -->
+    <section class="pengalaman" id="pengalaman">
+        <div class="text-center mt-6" style="margin:30px 0 30px 0">
+            <h4 class="mb-0 mt-6 display-6">PENGALAMAN
+            </h4>
+            <figcaption class="mt-0 mb-6">Meliputi pengalaman kerja, magang dan organisasi
+            </figcaption> 
+        </div>
+        <div class="container">
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-right">
+                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto1Modal">
+                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/bps.jpg" class="align-items-center rounded img-thumbnail" alt="BPS" width="350"/>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="porto1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">BPS (Badan Pusat Statistik) Kab. Gresik</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-left">
+                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto2Modal">
+                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/kf.jpg" class="align-items-center rounded img-thumbnail" alt="KimiaFarma" width="350"/>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="porto2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">KIMIA FARMA</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3-->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-right">
+                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto3Modal">
+                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/ipnu.jpg" class="align-items-center rounded img-thumbnail" alt="IPNU" width="350"/>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="porto3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">IPNU (Ikatan Pelajar Nahdlatul Ulama) </h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4-->
+                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-left">
+                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto4Modal">
+                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/pmg.jpg" class="align-items-center rounded img-thumbnail" alt="Permagres" width="350"/>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="porto4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">PERMAGRES (Persatuan Mahasiswa Gresik) UIN Malang</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Pengalaman -->
+        
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0" style="border-top: 8px solid; margin:60px 0 30px 0"/>
+    
+    <!-- Project -->
+    <section class="project" id="project">
+        <div class="text-center m-6" style="margin:30px 0 30px 0">
+            <h4 class="mb-0 mt-6 display-6">PROJECT
+            </h4>
+            <figcaption class="mt-0 mb-6">Meliputi semua project yang pernah dikerjakan
+            </figcaption> 
+        </div>
+        <div class="container">
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Portfolio Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#proj1Modal">
+                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/bps.jpg" class="align-items-center rounded img-thumbnail" alt="BPS" width="350"/>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="proj1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">BPS (Badan Pusat Statistik) Kab. Gresik</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#proj2Modal">
+                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/kf.jpg" class="align-items-center rounded img-thumbnail" alt="KimiaFarma" width="350"/>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">KIMIA FARMA</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body"></div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Project -->
+        
+    <!-- Divider -->
+    <hr class="sidebar-divider my-0" style="border-top: 8px solid; margin:60px 0 30px 0"/>
+    
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="text-center m-6" style="margin:30px 0 30px 0">
+            <h4 class="mb-0 mt-6 display-6">CONTACT
+            </h4> 
+        </div>
+                
+        <div class="container">
+            <!-- Portfolio Grid Items-->
+            <div class="row justify-content-center">
+                <!-- Contact Item 1-->
+                <div class="col-md-6 col-lg-4 mb-5" > 
+                    <div class="align-items-center text-center">
+                        <a class="btn btn-success" href="https://wa.me/6285895989909" role="button"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                    </div>
+                </div>
+                <!-- Contact Item 2-->
+                <div class="col-md-6 col-lg-4 mb-5"> 
+                    <div class="align-items-center text-center">
+                        <a class="btn btn-primary" href="mailto:alif.roger@gmail.com" role="button" ><i class="bi bi-envelope"></i> Email</a>
+                    </div>
+                </div>
+ 
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Contact -->
+    
+    <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <!-- Script Dark Mode Toogle-->
     <script>
-        /*!
- * Color mode toggler for Bootstrap's docs (https://getbootstrap.com/)
- * Copyright 2011-2022 The Bootstrap Authors
- * Licensed under the Creative Commons Attribution 3.0 Unported License.
- */
-
 (() => {
   'use strict'
 
@@ -95,8 +311,8 @@
     })
 
     btnToActive.classList.add('active')
-    activeThemeIcon.ClassList.remove(activeThemeIcon.dataset.themeIconActive) 
-    activeThemeIcon.ClassList.add(iconOfActiveBtn) 
+    activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive) 
+    activeThemeIcon.classList.add(iconOfActiveBtn) 
     activeThemeIcon.dataset.iconActive = iconOfActiveBtn
   }
 
@@ -119,7 +335,41 @@
         })
       })
   })
-})()
+})() 
+    </script>
+    <!-- Script GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <!-- Script AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Script Effect GSAP -->
+    <script>
+        gsap.from('.head img', {duration:1,rotateY:360,opacity:0});
+        gsap.from('.navbar', {duration:1.5,y:'-100%',opacity:0, ease:'bounce'});
+        gsap.from('.display-4', {duration:1,x:-50,opacity:0, delay:0.5, ease:'back'});
+        
+      const pengImages = document.querySelectorAll('.pengalaman img');
+      const delayTimes = [0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500];
+
+      function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+          var j = Math.floor(Math.random() * (i + 1));
+          var temp = array[i];
+          array[i] = array[j];
+          array[j] = temp;
+        }
+        return array;
+      }
+      const newDelay = shuffleArray(delayTimes);
+      pengImages.forEach((img, i) => {
+        img.dataset.aosDelay = i * 50 + '';
+        img.dataset.aosOffset = "300";
+        img.dataset.aosEasing = "ease-in-sine";
+      });
+
+      AOS.init({ 
+          once: true,
+          duration: 3000,
+      });
     </script>
   </body>
 </html>
