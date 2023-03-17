@@ -1,100 +1,260 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio Dio Alif</title>
     <!-- Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
     <!-- Bootstrap Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
     <!-- AOS -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  </head>
-  
-  
-  <body style="font-family: 'Lato', sans-serif;">
-      
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+</head>
+
+<body style="font-family: 'Lato', sans-serif; position: relative" data-bs-spy="scroll" data-bs-target="#navbarNav">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: var(--bs-body-bg);">
-      <div class="container">
-        <a class="navbar-brand" href="#">Dio Alif Arfiansyah</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg shadow-sm fixed-top" style="background-color: var(--bs-body-bg)">
+        <div class="container">
+            <a class="navbar-brand" href="#">Dio Alif Arfiansyah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#pengalaman">Pengalaman</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#project">Project</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-    <i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i>
-  </button>
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light">
-    <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>
-    Light
-  </button></li>
-    <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark">
-    <i class="bi bi-moon-stars-fill me-2 opacity-50" data-theme-icon="bi-moon-stars-fill"></i>
-    Dark
-  </button></li>
-    <li><button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto">
-    <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
-    Auto
-  </button></li>
-  </ul>
-            </li>
-          </ul>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pengalaman">Pengalaman</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#project">Project</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-sun-fill theme-icon-active" data-theme-icon-active="bi-sun-fill"></i></button>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li>
+                                <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="light">
+                    <i class="bi bi-sun-fill me-2 opacity-50" data-theme-icon="bi-sun-fill"></i>
+                    Light
+                  </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="dark">
+                    <i class="bi bi-moon-stars-fill me-2 opacity-50" data-theme-icon="bi-moon-stars-fill"></i>
+                    Dark
+                  </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item d-flex align-items-center" type="button" data-bs-theme-value="auto">
+                    <i class="bi bi-circle-half me-2 opacity-50" data-theme-icon="bi-circle-half"></i>
+                    Auto
+                  </button>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
     <!-- Akhir Navbar -->
-    
-    <!-- Heading -->
-    <section class="head" style="margin-top:100px" id="head">
-        <div class="container align-items-center text-center">
-                  <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/profil.png" alt="Dio Alif" width="200"/>
+
+    <!-- Tentang Saya -->
+    <section class="head" style="margin-top: 100px" id="tentang">
+        <div class="container align-items-center text-center mt-6">
+            <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/profil.png" alt="Dio Alif" width="200" />
             <h1 class="display-4">DIO ALIF ARFIANSYAH</h1>
-            <p class="lead">Administrator | Data Analis | Web Developer</p>
+            <p class="lead" data-aos="zoom-in" data-aos-duration="1000">
+                <span class="fw-bold" id="typed3"></span>
+            </p>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="align-items-center text-center">
+                    <a class="btn btn-secondary m-2 rounded-circle" href="https://wa.me/6285895989909" role="button" data-aos="fade-up" data-aos-duration="1000"><i class="bi bi-whatsapp"></i></a>
+                    <a class="btn btn-secondary m-2 rounded-circle" href="mailto:alif.roger@gmail.com" role="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><i class="bi bi-envelope"></i></a>
+                    <a class="btn btn-secondary m-2 rounded-circle" href="https://github.com/alifarfiansyah" role="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><i class="bi bi-github"></i></a>
+                    <a class="btn btn-secondary m-2 rounded-circle" href="https://instagram.com/arfiansyah09_" role="button" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><i class="bi bi-instagram"></i></a>
+                </div>
+            </div>
+            <p class="text-center" data-aos="zoom-in" data-aos-duration="1000">
+                <span class="fw-bold"><i class="bi bi-map-fill"></i> Alamat : </span> Desa Ngepung, Kecamatan Kedamean, Kabupaten Gresik, Jawa Timur, 61175
+            </p>
+            <div class="row justify-content-center">
+                <div class="align-items-center text-center">
+                    <a class="btn btn-secondary m-2" href="https://github.com/alifarfiansyah/profil/raw/main/DioAlif_CV.pdf" role="button" data-aos="fade-up" data-aos-duration="1000"><i class="bi bi-download"></i> Download CV</a>
+                </div>
+            </div>
+        </div>
+        <hr class="sidebar-divider rounded" style="border-top: 3px solid; margin: 30px 30px 0 30px" />
+        <hr class="sidebar-divider rounded" style="border-top: 6px solid; margin: 3px 0 3px 0" />
+        <hr class="sidebar-divider rounded" style="border-top: 3px solid; margin: 0 30px 30px 30px" />
+        <div class="container">
+            <div class="text-center mt-6" style="margin: 30px 0 30px 0" data-aos="zoom-in" data-aos-duration="1000">
+                <h1 class="mb-0 mt-6" data-aos="fade-right" data-aos-duration="1000">TENTANG SAYA</h1>
+            </div>
+            <div class="align-items-center">
+                <p style="text-align: justify" data-aos="zoom-in" data-aos-duration="1000">
+                    Seorang lulusan S1 Matematika yang berpengalaman dalam bidang Administrasi melalui pengalaman berorganisasi pada organisasi ekstra kampus, juga berpengalaman dalam bidang Data Entry Operator melalui pengalaman kerja di Badan Pusat Statistik Kab. Gresik.
+                    Mencari peluang kerja yang memberi kesempatan untuk semakin berkembang.
+                </p>
+            </div>
         </div>
     </section>
-    <!-- Akhir Heading -->
-    
+    <!-- Akhir Tentang Saya -->
+
     <!-- Divider -->
-    <hr class="sidebar-divider" style="border-top: 8px solid; margin:60px 0 30px 0"/>
-    
+    <hr class="sidebar-divider rounded" style="border-top: 3px solid; margin: 30px 30px 0 30px" />
+    <hr class="sidebar-divider rounded" style="border-top: 6px solid; margin: 3px 0 3px 0" />
+    <hr class="sidebar-divider rounded" style="border-top: 3px solid; margin: 0 30px 30px 30px" />
+
     <!-- Pengalaman -->
     <section class="pengalaman" id="pengalaman">
-        <div class="text-center mt-6" style="margin:30px 0 30px 0">
-            <h4 class="mb-0 mt-6 display-6">PENGALAMAN
-            </h4>
-            <figcaption class="mt-0 mb-6">Meliputi pengalaman kerja, magang dan organisasi
-            </figcaption> 
+        <div class="text-center mt-6" style="margin: 30px 0 30px 0" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="mb-0 mt-6" data-aos="fade-right" data-aos-duration="1000">PENGALAMAN</h1>
+            <p class="mt-0 mb-6">Meliputi pengalaman kerja, magang dan organisasi</p>
+        </div>
+        <div class="container" style="text-align: justify">
+            <!-- Pengalaman 1 -->
+            <div class="container mt-4" data-aos="fade-up" data-aos-duration="1000">
+                <h3>Badan Pusat Statistik (BPS) Kabupaten Gresik</h3>
+                <p><span class="fw-bold">Data Entry Operator</span> (November 2022 - Maret 2023)</p>
+                <div class="container">
+                    <div class="container">
+                        <p class="fw-bold mb-0">Deskripsi Pekerjaan :</p>
+                        <p class="mb-0 mt-0">
+                            <ul>
+                                <li>Memasukkan data sensus lapangan ke dalam aplikasi yang telah disediakan</li>
+                                <li>Mengidentifikasi eror data yang menyebabkan data tidak relevan terhadap fakta lapangan yang seharusnya</li>
+                                <li>Memastikan semua data yang telah di input adalah data bersih dan sesuai dengan aturan pada sistem aplikasi</li>
+                            </ul>
+                        </p>
+                        <p class="mt-0"><span class="fw-bold">Keahlian Teknikal :</span> Data Entry</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pengalaman 2 -->
+            <div class="container mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                <h3>PT. KIMIA FARMA, TBK</h3>
+                <p><span class="fw-bold">Big Data Analitics (Rakamin Virtual Internship)</span> (Oktober 2022 - November 2022)</p>
+                <div class="container">
+                    <div class="container">
+                        <p class="fw-bold mb-0">Deskripsi Pekerjaan :</p>
+                        <p class="mb-0 mt-0">
+                            <ul>
+                                <li>Memahami dasar-dasar tentang pengolahan data menggunakan SQL</li>
+                                <li>Memahami dasar-dasar tentang visualisasi data menggunakan Google Data Studio</li>
+                                <li>Mampu memvisualisasikan serta mendapatkan insight dari data yang diberikan</li>
+                            </ul>
+                        </p>
+                        <p class="mt-0"><span class="fw-bold">Keahlian Teknikal :</span> SQL; Google Data Studio</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pengalaman 3 -->
+            <div class="container mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                <h3>Pimpinan Komisariat Perguruan Tinggi (PKPT) Ikatan Pelajar Nahdlatul Ulama (IPNU) UIN Maulana Malik Ibrahim Malang</h3>
+                <p><span class="fw-bold">Sekretaris</span> (Oktober 2021 - Agustus 2022)</p>
+                <div class="container">
+                    <div class="container">
+                        <p class="fw-bold mb-0">Deskripsi Pekerjaan :</p>
+                        <p class="mb-0 mt-0">
+                            <ul>
+                                <li>Melakukan pendataan setiap surat masuk dan surat keluar organisasi</li>
+                                <li>Membuat serta menandatangani setiap surat keluar organisasi</li>
+                                <li>Membuat sistem database keanggotaan yang terintegrasi dengan proses pengkaderan</li>
+                                <li>Membuat pendataan inventaris organisasi</li>
+                                <li>Membantu ketua dalam mengontrol jalannya roda organisasi</li>
+                            </ul>
+                        </p>
+                        <p class="mt-0"><span class="fw-bold">Keahlian Teknikal :</span> SQL; PHP; HTML; Microsoft Word; Microsoft Excel</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pengalaman 4 -->
+            <div class="container mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <h3>Pimpinan Komisariat Perguruan Tinggi (PKPT) Ikatan Pelajar Nahdlatul Ulama (IPNU) UIN Maulana Malik Ibrahim Malang</h3>
+                <p><span class="fw-bold">Wakil Sekretaris</span> (Oktober 2020 - Oktober 2021)</p>
+                <div class="container">
+                    <div class="container">
+                        <p class="fw-bold mb-0">Deskripsi Pekerjaan :</p>
+                        <p class="mb-0 mt-0">
+                            <ul>
+                                <li>Melakukan backup pendataan setiap surat masuk dan surat keluar organisasi</li>
+                                <li>Membantu bakcup dalam pembuatan surat keluar organisasi</li>
+                                <li>Membantu pembuatan pedoman administrasi organisasi</li>
+                            </ul>
+                        </p>
+                        <p class="mt-0"><span class="fw-bold">Keahlian Teknikal :</span> Microsoft Word; Microsoft Excel; Microsoft Powerpoint</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pengalaman 5 -->
+            <div class="container mt-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">
+                <h3>Pimpinan Anak Komisariat Perguruan Tinggi (PAKPT) Ikatan Pelajar Nahdlatul Ulama (IPNU) K.H. Wahab Chasbullah Fakutas Sains dan Teknologi, Ekonomi, Psikologi</h3>
+                <p><span class="fw-bold">Sekretaris</span> (Oktober 2020 - Oktober 2021)</p>
+                <div class="container">
+                    <div class="container">
+                        <p class="fw-bold mb-0">Deskripsi Pekerjaan :</p>
+                        <p class="mb-0 mt-0">
+                            <ul>
+                                <li>Melakukan pendataan setiap surat masuk dan surat keluar organisasi</li>
+                                <li>Membuat serta menandatangani surat keluar organisasi</li>
+                                <li>Membantu ketua dalam melaksanakan mengontrol jalannya roda organisasi</li>
+                            </ul>
+                        </p>
+                        <p class="mt-0"><span class="fw-bold">Keahlian Teknikal :</span> Microsoft Word</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Pengalaman 6 -->
+            <div class="container mt-5 mb-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
+                <h3>Persatuan Mahasiswa Gresik (PERMAGRES) UIN Malang</h3>
+                <p><span class="fw-bold">Anggota Divisi Keagamaan</span> (Oktober 2019 - Oktober 2020)</p>
+                <div class="container">
+                    <div class="container">
+                        <p class="fw-bold mb-0">Deskripsi Pekerjaan :</p>
+                        <p class="mb-0 mt-0">
+                            <ul>
+                                <li>Melakukan penjadwalan serta melaksanakan kegiatan seputar keagamaan</li>
+                                <li>Melaksanakan program kerja organisasi</li>
+                            </ul>
+                        </p>
+                        <p class="mt-0"><span class="fw-bold">Keahlian Teknikal :</span> -</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Akhir Pengalaman -->
+
+    <!-- Divider -->
+    <hr class="sidebar-divider rounded" style="border-top: 3px solid; margin: 30px 30px 0 30px" />
+    <hr class="sidebar-divider rounded" style="border-top: 6px solid; margin: 3px 0 3px 0" />
+    <hr class="sidebar-divider rounded" style="border-top: 3px solid; margin: 0 30px 30px 30px" />
+
+    <!-- Project -->
+    <section class="project" id="project">
+        <div class="text-center m-6" style="margin: 30px 0 30px 0" data-aos="zoom-in" data-aos-duration="1000">
+            <h1 class="mb-0 mt-6" data-aos="fade-right" data-aos-duration="1000">PROJECT</h1>
+            <p class="mt-0 mb-6">Meliputi semua project yang pernah dikerjakan</p>
         </div>
         <div class="container">
             <!-- Portfolio Grid Items-->
             <div class="row justify-content-center">
                 <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-right">
-                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto1Modal">
-                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/bps.jpg" class="align-items-center rounded img-thumbnail" alt="BPS" width="350"/>
+                <div class="col-md-6 col-lg-4 mb-5 card m-3" data-aos="fade-up" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#porto1Modal">
+                    <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/webpkpt.PNG" class="align-items-center" alt="WebsitePKPT" width="350" />
+                    <div class="card-body">
+                        Website Database Anggota PKPT IPNU UIN Maulana Malik Ibrahim Malang
                     </div>
                 </div>
                 <!-- Modal -->
@@ -102,10 +262,18 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">BPS (Badan Pusat Statistik) Kab. Gresik</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Website Database Anggota PKPT IPNU UIN Maulana Malik Ibrahim Malang</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body"></div>
+                            <div class="modal-body text-center">
+                                <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/webpkpt.PNG" alt="WebsitePKPT" width="350" />
+                                <p style="text-align: justify;"><span class="fw-bold">Deskripsi Project :</span> Website ini merupakan website yang digunakan untuk menghimpun data semua anggota mulai dari awal masuk hingga menjadi alumni. Sehingga data anggota lintas angkatan dapat
+                                    diakses melalui website ini. Selain data anggota, website ini juga memuat data-data inventaris maupun data administrasi. Dari website ini juga dapat digunakan untuk melihat perkembangan organisasi melalui insight yang
+                                    diperoleh dari visualisasi data yang menjadi saah satu fitur dari website ini. Sehingga website ini menjadi satu wadah besar data organisasi yang dapat diakses oleh semua pengurus organisasi.</p>
+                                <p style="text-align: justify;"><span class="fw-bold">Bahasa yang digunakan :</span> PHP; HTML; CSS; Javasript</p>
+                                <p style="text-align: justify;"><span class="fw-bold">Framework :</span> Bootstrap</p>
+                                <div class="align-items-center text-center"><a class="btn btn-secondary m-2 text-center" href="https://kader.nu-maliki.or.id/"><i class="bi bi-globe2"></i> Kunjungi Website</a></div>
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
@@ -113,9 +281,10 @@
                     </div>
                 </div>
                 <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-left">
-                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto2Modal">
-                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/kf.jpg" class="align-items-center rounded img-thumbnail" alt="KimiaFarma" width="350"/>
+                <div class="col-md-6 col-lg-4 mb-5 card m-3" data-aos="fade-up" data-aos-duration="1000" data-bs-toggle="modal" data-bs-target="#porto2Modal">
+                    <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/webweton.PNG" class="align-items-center" alt="WebsiteWeton" width="350" />
+                    <div class="card-body">
+                        Website Perhitungan Hari dan Weton
                     </div>
                 </div>
                 <!-- Modal -->
@@ -123,219 +292,93 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">KIMIA FARMA</h1>
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Website Perhitungan Hari dan Weton</h1>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body"></div>
+                            <div class="modal-body text-center">
+                                <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/webweton.PNG" alt="WebsiteWeton" width="350" />
+                                <p style="text-align: justify;"><span class="fw-bold">Deskripsi Project :</span> Website ini merupakan website yang digunakan untuk mencari weton dari hari yang dimasukkan. Pencarian weton hari diperoleh dari kode javascript yang diperoleh dari salah
+                                    satu buku dari Lembaga Falakiyah Nahdlatul Ulama, dari buku tersebut tertulis pola perulangan tahun yang kemudian diolah sedemikian rupa menjadi kode javascript yang menghasilkan weton dari suatu hari. Website ini juga
+                                    mengkolaborasikan output weton dengan kajian dari suatu jurnal yang membahas tentang salah satu adat jawa tentang perjodohan. Sehingga output dari website ini adalah website yang dapat digunakan untuk mencari kecocokan
+                                    pasangan melalui weton.</p>
+                                <p style="text-align: justify;"><span class="fw-bold">Bahasa yang digunakan :</span> HTML; CSS; Javasript</p>
+                                <p style="text-align: justify;"><span class="fw-bold">Framework :</span> Bootstrap</p>
+                                <div class="align-items-center text-center"><a class="btn btn-secondary m-2 text-center" href="https://alifarfiansyah.github.io/klenik/"><i class="bi bi-github"></i> Kunjungi Website</a>
+                                    <a class="btn btn-secondary m-2 text-center" href="https://ablepedia.blogspot.com/2022/09/matematika-kehidupan-weton.html"><i class="bi bi-globe2"></i> Kunjungi Website</a>
+                                </div>
+                            </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Portfolio Item 3-->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-right">
-                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto3Modal">
-                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/ipnu.jpg" class="align-items-center rounded img-thumbnail" alt="IPNU" width="350"/>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="porto3Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">IPNU (Ikatan Pelajar Nahdlatul Ulama) </h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body"></div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio Item 4-->
-                <div class="col-md-6 col-lg-4 mb-5" data-aos="fade-left">
-                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#porto4Modal">
-                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/pmg.jpg" class="align-items-center rounded img-thumbnail" alt="Permagres" width="350"/>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="porto4Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">PERMAGRES (Persatuan Mahasiswa Gresik) UIN Malang</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body"></div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-    <!-- Akhir Pengalaman -->
-        
-    <!-- Divider -->
-    <hr class="sidebar-divider my-0" style="border-top: 8px solid; margin:60px 0 30px 0"/>
-    
-    <!-- Project -->
-    <section class="project" id="project">
-        <div class="text-center m-6" style="margin:30px 0 30px 0">
-            <h4 class="mb-0 mt-6 display-6">PROJECT
-            </h4>
-            <figcaption class="mt-0 mb-6">Meliputi semua project yang pernah dikerjakan
-            </figcaption> 
-        </div>
-        <div class="container">
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Portfolio Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#proj1Modal">
-                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/bps.jpg" class="align-items-center rounded img-thumbnail" alt="BPS" width="350"/>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="proj1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">BPS (Badan Pusat Statistik) Kab. Gresik</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body"></div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Portfolio Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5">
-                    <div class="mx-auto" data-bs-toggle="modal" data-bs-target="#proj2Modal">
-                        <img src="https://raw.githubusercontent.com/alifarfiansyah/profil/main/kf.jpg" class="align-items-center rounded img-thumbnail" alt="KimiaFarma" width="350"/>
-                    </div>
-                </div>
-                <!-- Modal -->
-                <div class="modal fade" id="proj2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h1 class="modal-title fs-5" id="exampleModalLabel">KIMIA FARMA</h1>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                            </div>
-                            <div class="modal-body"></div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
- 
             </div>
         </div>
     </section>
     <!-- Akhir Project -->
-        
-    <!-- Divider -->
-    <hr class="sidebar-divider my-0" style="border-top: 8px solid; margin:60px 0 30px 0"/>
-    
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="text-center m-6" style="margin:30px 0 30px 0">
-            <h4 class="mb-0 mt-6 display-6">CONTACT
-            </h4> 
-        </div>
-                
-        <div class="container">
-            <!-- Portfolio Grid Items-->
-            <div class="row justify-content-center">
-                <!-- Contact Item 1-->
-                <div class="col-md-6 col-lg-4 mb-5" > 
-                    <div class="align-items-center text-center">
-                        <a class="btn btn-success" href="https://wa.me/6285895989909" role="button"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-                    </div>
-                </div>
-                <!-- Contact Item 2-->
-                <div class="col-md-6 col-lg-4 mb-5"> 
-                    <div class="align-items-center text-center">
-                        <a class="btn btn-primary" href="mailto:alif.roger@gmail.com" role="button" ><i class="bi bi-envelope"></i> Email</a>
-                    </div>
-                </div>
- 
-            </div>
-        </div>
-    </section>
-    <!-- Akhir Contact -->
-    
+
     <!-- Script Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <!-- Script Dark Mode Toogle-->
     <script>
-(() => {
-  'use strict'
+        (() => {
+            'use strict';
 
-  const storedTheme = localStorage.getItem('theme')
+            const storedTheme = localStorage.getItem('theme');
 
-  const getPreferredTheme = () => {
-    if (storedTheme) {
-      return storedTheme
-    }
+            const getPreferredTheme = () => {
+                if (storedTheme) {
+                    return storedTheme;
+                }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
-  }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
 
-  const setTheme = function (theme) {
-    if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      document.documentElement.setAttribute('data-bs-theme', 'dark')
-    } else {
-      document.documentElement.setAttribute('data-bs-theme', theme)
-    }
-  }
+            const setTheme = function(theme) {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            };
 
-  setTheme(getPreferredTheme())
+            setTheme(getPreferredTheme());
 
-  const showActiveTheme = theme => {
-    const activeThemeIcon = document.querySelector('.theme-icon-active')
-    const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`)
-    const iconOfActiveBtn = btnToActive.querySelector('i').dataset.themeIcon
+            const showActiveTheme = (theme) => {
+                const activeThemeIcon = document.querySelector('.theme-icon-active');
+                const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+                const iconOfActiveBtn = btnToActive.querySelector('i').dataset.themeIcon;
 
-    document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
-      element.classList.remove('active')
-    })
+                document.querySelectorAll('[data-bs-theme-value]').forEach((element) => {
+                    element.classList.remove('active');
+                });
 
-    btnToActive.classList.add('active')
-    activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive) 
-    activeThemeIcon.classList.add(iconOfActiveBtn) 
-    activeThemeIcon.dataset.iconActive = iconOfActiveBtn
-  }
+                btnToActive.classList.add('active');
+                activeThemeIcon.classList.remove(activeThemeIcon.dataset.themeIconActive);
+                activeThemeIcon.classList.add(iconOfActiveBtn);
+                activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+            };
 
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-    if (storedTheme !== 'light' || storedTheme !== 'dark') {
-      setTheme(getPreferredTheme())
-    }
-  })
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                if (storedTheme !== 'light' || storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
 
-  window.addEventListener('DOMContentLoaded', () => {
-    showActiveTheme(getPreferredTheme())
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
 
-    document.querySelectorAll('[data-bs-theme-value]')
-      .forEach(toggle => {
-        toggle.addEventListener('click', () => {
-          const theme = toggle.getAttribute('data-bs-theme-value')
-          localStorage.setItem('theme', theme)
-          setTheme(theme)
-          showActiveTheme(theme)
-        })
-      })
-  })
-})() 
+                document.querySelectorAll('[data-bs-theme-value]').forEach((toggle) => {
+                    toggle.addEventListener('click', () => {
+                        const theme = toggle.getAttribute('data-bs-theme-value');
+                        localStorage.setItem('theme', theme);
+                        setTheme(theme);
+                        showActiveTheme(theme);
+                    });
+                });
+            });
+        })();
     </script>
     <!-- Script GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
@@ -343,33 +386,48 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- Script Effect GSAP -->
     <script>
-        gsap.from('.head img', {duration:1,rotateY:360,opacity:0});
-        gsap.from('.navbar', {duration:1.5,y:'-100%',opacity:0, ease:'bounce'});
-        gsap.from('.display-4', {duration:1,x:-50,opacity:0, delay:0.5, ease:'back'});
-        
-      const pengImages = document.querySelectorAll('.pengalaman img');
-      const delayTimes = [0, 500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500];
+        gsap.from('.head img', {
+            duration: 1,
+            rotateY: 360,
+            opacity: 0,
+        });
+        gsap.from('.navbar', {
+            duration: 1.5,
+            y: '-100%',
+            opacity: 0,
+            ease: 'bounce',
+        });
+        gsap.from('.display-4', {
+            duration: 1,
+            x: -50,
+            opacity: 0,
+            delay: 0.5,
+            ease: 'back',
+        });
 
-      function shuffleArray(array) {
-        for (var i = array.length - 1; i > 0; i--) {
-          var j = Math.floor(Math.random() * (i + 1));
-          var temp = array[i];
-          array[i] = array[j];
-          array[j] = temp;
-        }
-        return array;
-      }
-      const newDelay = shuffleArray(delayTimes);
-      pengImages.forEach((img, i) => {
-        img.dataset.aosDelay = i * 50 + '';
-        img.dataset.aosOffset = "300";
-        img.dataset.aosEasing = "ease-in-sine";
-      });
-
-      AOS.init({ 
-          once: true,
-          duration: 3000,
-      });
+        AOS.init({
+            once: true,
+            duration: 3000,
+        });
     </script>
-  </body>
+    <!-- Script Active Scroll Navbar -->
+    <script>
+        var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+            target: '#navbarNav',
+        });
+    </script>
+    <!-- Typed Text -->
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <!-- Script Typed -->
+    <script>
+        var typed3 = new Typed('#typed3', {
+            strings: ['Administrator', 'Data Analis', 'Web Developer'],
+            typeSpeed: 50,
+            backSpeed: 0,
+            smartBackspace: true, // this is a default
+            loop: true,
+        });
+    </script>
+</body>
+
 </html>
